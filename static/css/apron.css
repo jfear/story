@@ -16,6 +16,12 @@ html {
     left: 0 !important;
   }
 }
+.remark-slide-scaler {
+    box-shadow: none;
+}
+.remark-slide-container {
+    background-color: black;
+}
 .remark-slide-content {
   display: block;
   box-sizing: border-box;
@@ -335,13 +341,16 @@ html {
   margin: 0px;
   padding: 0px;
 }
+.remark-slide-content .header li:nth-child(1),
 .remark-slide-content .footer li:nth-child(1) {
   left: 20px;
 }
+.remark-slide-content .header li:nth-child(2),
 .remark-slide-content .footer li:nth-child(2) {
   left: 50%;
   margin-left: -50px;
 }
+.remark-slide-content .header li img,
 .remark-slide-content .footer li img {
   display: block;
   max-height: 100%;
@@ -351,4 +360,27 @@ html {
 .remark-slide-content.no-footer .remark-slide-number,
 .remark-slide-content.no-footer .footer {
   display: none;
+}
+
+.remark-slide-content .header li {
+  font-size: 1.25rem;
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 12px;
+  height: 30px;
+  margin: 0px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.remark-slide-content .header,
+.remark-slide-content .header ul {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
 }
