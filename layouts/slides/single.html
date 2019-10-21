@@ -38,6 +38,7 @@
     </textarea>
     <script type="text/javascript" src="{{ "js/qrcode.js" | absURL }}"></script>
     <script src="{{ "js/remark.js" | absURL }}"></script>
+    <script src="{{ "js/remark-zoom.js" | absURL }}"></script>
     <script>
       var slideshow = remark.create({
          {{ with .Params.ratio }} ratio: "{{ . }}", {{ end }}
